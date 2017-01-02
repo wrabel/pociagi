@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApplication8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Pociag" Height="350" Width="650.203">
+    <Grid Margin="10,0,2,0">
+        <Button Content="Dodaj lokomotywe" HorizontalAlignment="Left" Margin="45,10,0,0" VerticalAlignment="Top" Width="142" x:Name="btn_add_lok" Click="btn_add_lok_Click"/>
+        <Button Content="Dodaj wagon" HorizontalAlignment="Left" Margin="45,52,0,0" VerticalAlignment="Top" Width="142" x:Name="btn_add_wag" Click="btn_add_wag_Click"/>
+        <Button Content="Sprawdz poprwnosc" HorizontalAlignment="Left" Margin="45,90,0,0" VerticalAlignment="Top" Width="142" x:Name="btn_spr" Click="btn_spr_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="45,129,0,0" TextWrapping="Wrap" Text="Sklad pociagu:" VerticalAlignment="Top" Width="142"/>
+        <TextBlock HorizontalAlignment="Left" Margin="45,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.82,-0.25" Width="295" Height="160" x:Name="txt_sklad"/>
+        <TextBlock HorizontalAlignment="Left" Margin="347,21,0,0" TextWrapping="Wrap" Text="Masa" VerticalAlignment="Top" Height="22" Width="95" x:Name="txt_masa"/>
+        <TextBlock HorizontalAlignment="Left" Margin="347,59,0,0" TextWrapping="Wrap" Text="model" VerticalAlignment="Top" Height="22" Width="95" x:Name="txt_model"/>
+        <TextBlock HorizontalAlignment="Left" Margin="347,92,0,0" TextWrapping="Wrap" Text="typ" VerticalAlignment="Top" Height="22" Width="95" x:Name="txt_typ"/>
+        <ComboBox HorizontalAlignment="Left" Margin="471,92,0,0" VerticalAlignment="Top" Width="120" x:Name="combobox_1" SelectedIndex="0">
+            <ComboBoxItem Content="Osobowy" HorizontalAlignment="Left" Width="118" />
+            <ComboBoxItem Content="Towarowy" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="471,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" x:Name="textbox_masa"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="471,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"  x:Name="textbox_model"/>
+        <TextBlock HorizontalAlignment="Left" Margin="347,132,0,0" TextWrapping="Wrap" Text="rodza/ladunek" VerticalAlignment="Top" RenderTransformOrigin="-0.56,-0.25" Width="95" x:Name="txt_rodzaj"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="471,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"  x:Name="textbox_rodzaj"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="418,169,0,0" VerticalAlignment="Top" Width="75" x:Name="BTN_ADD" Click="BTN_ADD_Click"/>
+
+    </Grid>
+</Window>
